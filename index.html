@@ -1,1 +1,180 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
 
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f5f7ff;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #6c8cff, #9b7cff);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        header img {
+            width: 160px;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid white;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            font-size: 35px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        section {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .title {
+            text-align: center;
+            font-size: 28px;
+            color: #536dce;
+            margin-bottom: 25px;
+        }
+
+        .about {
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            text-align: center;
+            line-height: 1.8;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .card h3 {
+            padding: 15px 15px 5px;
+            color: #536dce;
+        }
+
+        .card p {
+            padding: 5px 15px 20px;
+            color: #666;
+        }
+
+        footer {
+            text-align: center;
+            background: #536dce;
+            color: white;
+            padding: 25px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ส่วนหัวเว็บไซต์ -->
+    <header>
+
+        <!-- เปลี่ยน profile.jpg เป็นชื่อรูปของเรา -->
+        <img src="profile.jpg" alt="รูปโปรไฟล์">
+
+        <h1>Chanchanok Prasertsaeng</h1>
+        <p>My Portfolio ✨</p>
+
+    </header>
+
+
+    <!-- เกี่ยวกับฉัน -->
+    <section>
+
+        <h2 class="title">เกี่ยวกับฉัน</h2>
+
+        <div class="about">
+            <p>
+                สวัสดีค่ะ ฉันชื่อฉันท์ชนก ประเสริฐแสง
+                เป็นนักเรียนที่สนใจด้านการออกแบบ
+                ศิลปะ และสถาปัตยกรรม
+            </p>
+        </div>
+
+    </section>
+
+
+    <!-- ผลงาน -->
+    <section>
+
+        <h2 class="title">ผลงานของฉัน</h2>
+
+        <div class="gallery">
+
+            <!-- ผลงานที่ 1 -->
+            <div class="card">
+                <img src="work1.jpg" alt="ผลงานที่ 1">
+                <h3>ผลงานที่ 1</h3>
+                <p>รายละเอียดเกี่ยวกับผลงาน</p>
+            </div>
+
+            <!-- ผลงานที่ 2 -->
+            <div class="card">
+                <img src="work2.jpg" alt="ผลงานที่ 2">
+                <h3>ผลงานที่ 2</h3>
+                <p>รายละเอียดเกี่ยวกับผลงาน</p>
+            </div>
+
+            <!-- ผลงานที่ 3 -->
+            <div class="card">
+                <img src="work3.jpg" alt="ผลงานที่ 3">
+                <h3>ผลงานที่ 3</h3>
+                <p>รายละเอียดเกี่ยวกับผลงาน</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+        © 2026 My Portfolio
+    </footer>
+
+</body>
+</html>
